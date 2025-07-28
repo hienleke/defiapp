@@ -17,7 +17,7 @@ const common_1 = require("@nestjs/common");
 const microservices_1 = require("@nestjs/microservices");
 let KafkaService = class KafkaService {
     handleMessage(message) {
-        console.log('Received from Kafka:', message.value);
+        console.log('Received from Kafka:', message);
     }
 };
 exports.KafkaService = KafkaService;

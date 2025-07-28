@@ -9,10 +9,11 @@ async function bootstrap() {
         transport: microservices_1.Transport.KAFKA,
         options: {
             client: {
+                clientId: 'nestjs-client',
                 brokers: ['localhost:9092'],
             },
             consumer: {
-                groupId: 'nestjs-group',
+                groupId: 'consumer-123',
             },
         },
     });

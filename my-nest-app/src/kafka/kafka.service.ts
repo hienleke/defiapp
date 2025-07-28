@@ -10,6 +10,6 @@ interface KafkaMessage {
 export class KafkaService {
   @EventPattern('test-topic')
   handleMessage(@Payload() message: KafkaMessage): void {
-    console.log('Received from Kafka:', message.value);
+    console.log('Received from Kafka:', message);
   }
 }
